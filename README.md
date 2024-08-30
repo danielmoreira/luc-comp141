@@ -26,7 +26,7 @@ While COMP 141 does not aim at being a comprehensive programming class, students
 skills using shell scripting.
 They will also learn about problem-solving using Unix commands supported by shell scripts.
 
-----------
+---------
 ## Delivery
 COMP 141 is fully online, with asynchronous lecture videos and reading material,
 and weekly online synchronous meetings to let students ask questions and get
