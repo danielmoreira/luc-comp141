@@ -36,19 +36,11 @@ centralize, and store the course announcements, materials, activities,
 assignments, quizzes, progress reports, and grading communication.
 
 ----------
-## This Repo
-This repository aims at providing version control of the course assignments,
-which shall be cloned by the students to enable training, evaluation, and answer
-submission.
-
-Each assignment is linked to a particular repository branch, as described below.
-
-| Assignment | Branch                                                          |
-|------------|-----------------------------------------------------------------|
-| #2         | https://github.com/danielmoreira/luc-comp141/tree/assignment_2  | 
-
-To access a particular assignment, students must clone the assignment's branch,
-as depicted below for *Assignment #*soon**.
+## This Branch
+This branch of the [original repository](https://github.com/danielmoreira/luc-comp141/tree/main)
+is related to *Assignment #2* and shall be cloned by the students to enable
+training, evaluation, and answer submission.
+The command to clone it is below.
 
 ```
 git clone -b assignment_2 git@github.com:danielmoreira/luc-comp141.git
