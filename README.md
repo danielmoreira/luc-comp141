@@ -43,15 +43,15 @@ submission.
 
 Each assignment is linked to a particular repository branch, as described below.
 
-| Assignment | Branch | Clone URL |
-|------------|--------|-----------|
-|*Soon*      | *Soon* | *Soon*    |
+| Assignment | Branch                                                          |
+|------------|-----------------------------------------------------------------|
+| #2         | https://github.com/danielmoreira/luc-comp141/tree/assignment_2  | 
 
 To access a particular assignment, students must clone the assignment's branch,
 as depicted below for *Assignment #*soon**.
 
 ```
-git clone <soon>
+git clone -b assignment_2 git@github.com:danielmoreira/luc-comp141.git
 ```
 
 ------------
