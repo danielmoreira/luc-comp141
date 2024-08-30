@@ -43,7 +43,7 @@ training, evaluation, and answer submission.
 The command to clone it is below.
 
 ```
-git clone -b assignment_2 git@github.com:danielmoreira/luc-comp141.git
+git clone -b assignment_2 https://github.com/danielmoreira/luc-comp141.git
 ```
 
 ------------
