@@ -51,7 +51,7 @@ To access a particular assignment, students must clone the assignment's branch,
 as depicted below for *Assignment #2*.
 
 ```
-git clone -b assignment_2 git@github.com:danielmoreira/luc-comp141.git
+git clone -b assignment_2 https://github.com/danielmoreira/luc-comp141.git
 ```
 
 -------------
