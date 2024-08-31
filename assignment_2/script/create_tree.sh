@@ -56,6 +56,9 @@ pwd_folder=$(pwd)
 # holds the number of images, which will be target of the assignment
 total_images=0
 
+# saves the given key to compute the number of images for further reference
+echo "$1" > .uvid.txt
+
 # Step 1.
 # create the basis folder (comp141_assign2) within $HOME
 cd "$HOME" || (
@@ -132,7 +135,7 @@ total_images=$((total_images + current_images))
 # copy the moved images back to the images folder
 find "folder_01" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.tiff" \) -exec cp {} "$pwd_folder/data/images/" \;
 
-# return the total of images
+# return to the original folder
 cd "$pwd_folder" || (
   echo "[ERROR 03] Contact instructor."
   exit
