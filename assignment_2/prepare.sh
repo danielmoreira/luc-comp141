@@ -11,4 +11,6 @@
 # ./prepare.sh dmoreira1
 ##############
 
+echo "Creating directories for $1."
 ./script/create_tree.sh "$1"
+echo "Directories successfully created at $HOME/comp141_assign2."

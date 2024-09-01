@@ -24,13 +24,13 @@ local Unix-like system. FYI, we will learn Git toward the
 end of the course.
 
 It also means you have found the cloned directory named
-"luc-comp141" within your file system. Make sure to have
+"assignment_2" within your file system. Make sure to have
 it set as your current working directory by using the
 "change directory" (cd) command to reach it. Use the
 "print working directory" (pwd) command to confirm this
 information.
 
-Once inside the "luc-comp141" directory, run the following
+Once inside the "assignment_2" directory, run the following
 sequence of commands to prepare your file system for the
 assignment. FYI, we will learn the meaning of these commands
 in the upcoming weeks of the course.
@@ -83,6 +83,9 @@ dmoreira1
 6
 17
 --------------
+
+If you answer items 3.2 and 3.3 correctly, you'll receive
+5 points for each one.
 
 
 Thanks for your attention with these exercises.
