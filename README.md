@@ -46,6 +46,8 @@ The command to clone it is below.
 git clone -b assignment_2 https://github.com/danielmoreira/luc-comp141.git
 ```
 
+The starting point of the assignment is the instructions file available [here](https://github.com/danielmoreira/luc-comp141/blob/assignment_2/assignment_2/instructions.txt).
+
 ------------
 ## References
 * Shots, W. *The Linux Command Line, 2nd Edition*. No Starch Press Book, 2019. Available at https://linuxcommand.org/.
