@@ -1,0 +1,54 @@
+Hi everyone,
+
+This is our second assignment.
+Please follow the steps below to download the instructions to your Unix-like terminal.
+You will need to work on the terminal to execute the instructions and obtain the answers, which you will then submit here in the available text box.
+Let me know if you face any issues or have any questions while doing it.
+
+Cheers,
+-- Daniel
+
+
+1. Git Installation
+You will need Git installed on your system to download the instructions and questions.
+To test if Git is running on your system, execute the following command on your Unix-like terminal:
+
+git --version
+
+If you get a "command not found" error, install Git with one of the following commands.
+
+For MacOS users:
+
+brew install git
+
+For WSL and Ubuntu (or another Debian-based distribution) users:
+
+sudo apt install git
+
+Make sure to provide the user's password in the latter case.
+Observe that characters do not display when you type passwords.
+
+
+2. Download the Instructions
+Execute the following command on your terminal after Git is successfully installed:
+
+git clone -b assignment_2 https://github.com/danielmoreira/luc-comp141.git luc-comp141-assign2
+
+This command will create a folder named "luc-comp141-assign2" in the current working directory.
+Verify if the folder was created by running:
+
+ls luc-comp141-assign2
+
+
+
+3. Open and Follow the Instructions
+Change the working directory to the folder "luc-comp141-assign2/assignment_2":
+
+cd luc-comp141-assign2/assignment_2
+
+Read the content of the file named "instructions.txt" and follow the instructions carefully.
+To read the file content, you can use the "less" command:
+
+less instructions.txt
+
+Use the keyboard arrows up and down to navigate the file content and press "q" to quit.
