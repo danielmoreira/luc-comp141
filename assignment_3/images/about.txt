@@ -1,0 +1,3 @@
+Images from the COCO dataset (http://images.cocodataset.org/zips/test2017.zip),
+which are shared under a Creative Commons Attribution 4.0 License
+(https://creativecommons.org/licenses/by/4.0/legalcode).

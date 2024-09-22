@@ -35,24 +35,16 @@ We use [Sakai](https://sakai.luc.edu/) as the online platform to support,
 centralize, and store the course announcements, materials, activities,
 assignments, quizzes, progress reports, and grading communication.
 
-------------
-## This Repo
-This repository aims at providing version control of the course assignments,
-which shall be cloned by the students to enable training, evaluation, and answer
-submission.
-
-Each assignment is linked to a particular repository branch, as described below.
-
-| Assignment | Branch                                                          |
-|------------|-----------------------------------------------------------------|
-| #2         | https://github.com/danielmoreira/luc-comp141/tree/assignment_2  | 
-
-To access a particular assignment, students must clone the assignment's branch,
-as depicted below for *Assignment #2*.
-
+----------
+## This Branch
+This branch of the [original repository](https://github.com/danielmoreira/luc-comp141/tree/main)
+is related to *Assignment #3* and shall be cloned by the students to enable
+training, evaluation, and answer submission.
+The command to clone it is below.
 ```
-git clone -b assignment_2 https://github.com/danielmoreira/luc-comp141.git
+git clone -b assignment_3 https://github.com/danielmoreira/luc-comp141.git
 ```
+The starting point of the assignment is the instructions file available [here](https://github.com/danielmoreira/luc-comp141/blob/assignment_3/assignment_3/instructions.txt).
 
 -------------
 ## References
