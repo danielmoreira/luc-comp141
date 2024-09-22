@@ -93,8 +93,8 @@ text file named "comp141_assign3/valid_list.txt".
 3.9. List the content of the "test" directory and save it in a
 text file named "comp141_assign3/test_list.txt".
 
-3.10. Remove the "images" images folder completely and save the
-output of the "tree" command inside a text file name "comp141_assign3/tree.txt".
+3.10. Remove the "images" folder completely and save the output of the
+"tree" command inside a text file name "comp141_assign3/tree.txt".
 
 3.11. Submit your answers to Sakai (https://sakai.luc.edu/x/u80AXl)
 by using the available text box and the "Attachments" feature of "Homework 3".
