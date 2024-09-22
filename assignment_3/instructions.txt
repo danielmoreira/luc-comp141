@@ -58,7 +58,7 @@ by using the command line. Do not use a graphical user interface.
 
 3.1. Change the working directory to "comp141_assign3".
 
-3.2. Inspect the content of "comp141_assign2" by navigating
+3.2. Inspect the content of "comp141_assign3" by navigating
 inside it with "cd" and calling other commands. How many JPG image
 files are there inside the directories and subdirectories of
 "comp141_assign3"? Do not count them by hand, as it would take too long.
