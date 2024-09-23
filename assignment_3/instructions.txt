@@ -84,14 +84,17 @@ are there inside the "validation" folder after you moved the files?
 from the "images" to the "test" directory. How many JPG images
 are there inside the "test" folder after you moved the files?
 
-3.7. List the content of the "train" directory and save it in a
-text file named "comp141_assign3/train_list.txt".
+3.7. List the images of the "train" directory sorted by disk size
+from the smallest to the largest and save the result in a text file
+named "comp141_assign3/train_list.txt".
 
-3.8. List the content of the "validation" directory and save it in a
-text file named "comp141_assign3/valid_list.txt".
+3.8. List the images of the "validation" directory sorted by disk
+size from the smallest to the largest and save the result in a text
+file named "comp141_assign3/valid_list.txt".
 
-3.9. List the content of the "test" directory and save it in a
-text file named "comp141_assign3/test_list.txt".
+3.9. List the images of the "test" directory sorted by disk size
+from the smallest to the largest and save the result in a text file
+named "comp141_assign3/test_list.txt".
 
 3.10. Remove the "images" folder completely and save the output of the
 "tree" command inside a text file name "comp141_assign3/tree.txt".
