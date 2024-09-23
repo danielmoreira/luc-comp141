@@ -18,7 +18,7 @@ git clone -b assignment_3 https://github.com/danielmoreira/luc-comp141.git luc-c
 This command will create a folder named "luc-comp141-assign3" in the current working directory.
 Verify if the folder was created by running:
 
-ls luc-comp141-assign2
+ls luc-comp141-assign3
 
 
 
