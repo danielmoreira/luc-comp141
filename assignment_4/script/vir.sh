@@ -5,9 +5,9 @@
 
 # configuration parameters
 col_count=80
-deadline=300
-message_time=5
-code_file="$HOME/code.txt"
+deadline=300   # 5 minutes entire program
+message_time=5 # 5 seconds each message
+code_file="./code.txt"
 
 # joking messages
 # 1st message

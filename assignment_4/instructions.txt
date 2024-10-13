@@ -66,10 +66,9 @@ if that's the case, go back to item 3.3 above and retry it.
 ATTENTION: closing the terminal window with the "X" button WILL NOT kill the program.
 You will fail the assignment if you do it.
 
-3.5. Check the content of the file saved as "code.txt" within your home directory.
+3.5. Check the content of the file saved as "code.txt" within the current directory.
 Make sure you have the permission to read it.
-ATTENTION: there will be no "code.txt" file (at $HOME/code.txt) if you failed to kill
-the process in item 3.4.
+ATTENTION: there will be no "code.txt" file if you failed to kill the process in item 3.4.
 
 3.6. Submit your answer to Sakai (https://sakai.luc.edu/x/u80AXl)
 by using the available text box. Type in the text box the following information:
