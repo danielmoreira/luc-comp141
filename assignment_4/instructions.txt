@@ -63,6 +63,8 @@ Here is the command example for Prof. Moreira's UVID for a reference:
 You will have 5 minutes to discover its Process ID (PID)  with "ps" or "top" and kill it.
 If you do not kill it within the 5 minutes, you will fail the assignment;
 if that's the case, go back to item 3.3 above and retry it.
+ATTENTION: closing the terminal window with the "X" button WILL NOT kill the program.
+You will fail the assignment if you do it.
 
 3.5. Check the content of the file saved as "code.txt" within your home directory.
 Make sure you have the permission to read it.
