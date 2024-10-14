@@ -53,10 +53,11 @@ submission.
 
 Each assignment is linked to a particular repository branch, as described below.
 
-| Assignment | Branch                                                         |
-|------------|----------------------------------------------------------------|
-| #2         | https://github.com/danielmoreira/luc-comp141/tree/assignment_2 | 
-| #3         | https://github.com/danielmoreira/luc-comp141/tree/assignment_3 | 
+| Assignment | Topic                                            | Branch                                                         |
+|------------|--------------------------------------------------|----------------------------------------------------------------|
+| #2         | File System Navigation and Exploration           | https://github.com/danielmoreira/luc-comp141/tree/assignment_2 | 
+| #3         | Manipulating Files and Directories & Redirection | https://github.com/danielmoreira/luc-comp141/tree/assignment_3 | 
+| #4         | Permissions & Processes                          | https://github.com/danielmoreira/luc-comp141/tree/assignment_4 | 
 
 To access a particular assignment, students must clone the assignment's branch,
 as depicted below for *Assignment #2*.
