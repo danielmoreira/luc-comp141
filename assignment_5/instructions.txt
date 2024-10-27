@@ -1,0 +1,98 @@
+COMP 141 / 400D - Intro to Computing Tools and Techniques
+Loyola University Chicago, Fall 2024
+Assignment #5: Using vi
+Total: 10 points
+Due date: Nov 10, 11:55 PM CT
+--------------
+
+
+1. Introduction
+This document contains the instructions to answer
+the fifth assignment of the COMP 141 / 400D course.
+This assignment aims to train and evaluate the students'
+abilities to use vi to manipulate large text files.
+
+
+2. File System Preparation
+If you are reading these instructions, it means you have
+successfully executed the "git" command to clone the
+"assignment_5" branch of the project hosted at
+"https://github.com/danielmoreira/luc-comp141" to your
+local Unix-like system. FYI, we will learn Git toward the
+end of the course.
+
+It also means you have found the cloned directory named
+"assignment_5" within your file system. Make sure to have
+it set as your current working directory by using the
+"change directory" (cd) command to reach it. Use the
+"print working directory" (pwd) command to confirm this
+information.
+
+Once inside the "assignment_5" directory, run the following
+sequence of commands to prepare your file system for the
+assignment.
+
+A. Make the "prepare" script executable. Run with no modifications:
+chmod a+x prepare.sh
+
+B. Run with no modifications:
+./prepare.sh
+
+These commands will create a directory named "comp141_assign5"
+inside your $HOME directory (https://en.wikipedia.org/wiki/Home_directory).
+Use the "ls" command to list the content of $HOME and look for it:
+ls $HOME
+
+
+3. Assignment Instructions
+After successfully executing item 2 above, do the following tasks
+by using vi and the command line. Do not use a graphical user interface.
+
+3.1. Change the working directory to "comp141_assign5".
+
+3.2. Check the content of the directory. You must find the following text files:
+* File 1: profiles_2015.csv (with 10,379 lines)
+* File 2: profiles_2023.csv (with 32,114 lines)
+
+3.3. Verify the number of lines within each file, to make sure you have got
+non-corrupted versions.
+
+3.4. Open both files and a new third one named 'profiles_2024.csv' with vi.
+
+3.5. Transfer the header of "File 2" to the new file.
+The header comprises the first lines of the file that start with a "#".
+
+3.6. In addition to the header, merge the content of "File 1" and "File 2" into the new file:
+
+3.6.1. Add the content of "File 1" first without its first two lines.
+Replace every '|' delimiter with ','.
+
+Here is an example of a modified line after replacement:
+Original:
+1|/home/comp141/profile_system/pictures/077454.png|Knox Zev|2012/10/17|1988/9/5|Chicago|India|167|94|Pilot
+Modified:
+1,/home/comp141/profile_system/pictures/077454.png,Knox Zev,2012/10/17,1988/9/5,Chicago,India,167,94,Pilot
+
+3.6.2. Append the content of "File 2", after removing its lines 10,001 -- 13,000.
+Do not repeat its header.
+
+3.7. Replace the fixed home directory "/home/comp141" with the following string: "$HOME".
+Here is an example of a line after replacement:
+Original:
+1,/home/comp141/profile_system/pictures/077454.png,Knox Zev,2012/10/17,1988/9/5,Chicago,India,167,94,Pilot
+Modified:
+1,$HOME/profile_system/pictures/077454.png,Knox Zev,2012/10/17,1988/9/5,Chicago,India,167,94,Pilot
+
+3.8. Remove all the lines in the new file that have one or more "none" values.
+
+
+Save the new file and upload it to Sakai.
+You will get up to 10 points if you accomplish the following tasks:
+* 2 points for doing item 3.5 correctly.
+* 2 points for doing item 3.6.1 correctly.
+* 2 points for doing item 3.6.2 correctly.
+* 2 points for doing item 3.7 correctly.
+* 2 points for doing item 3.8 correctly.
+
+Thanks for your attention with these exercises.
+This is the end of the instructions file.

@@ -48,16 +48,16 @@ assignments, quizzes, progress reports, and grading communication.
 ## This Branch
 
 This branch of the [original repository](https://github.com/danielmoreira/luc-comp141/tree/main)
-is related to *Assignment #4* and shall be cloned by the students to enable
+is related to *Assignment #5* and shall be cloned by the students to enable
 training, evaluation, and answer submission.
 The command to clone it is below.
 
 ```
-git clone -b assignment_4 https://github.com/danielmoreira/luc-comp141.git
+git clone -b assignment_5 https://github.com/danielmoreira/luc-comp141.git
 ```
 
 The starting point of the assignment is the instructions file
-available [here](https://github.com/danielmoreira/luc-comp141/blob/assignment_4/assignment_4/instructions.txt).
+available [here](https://github.com/danielmoreira/luc-comp141/blob/assignment_5/assignment_5/instructions.txt).
 
 -------------
 
