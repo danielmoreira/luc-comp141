@@ -58,6 +58,7 @@ Each assignment is linked to a particular repository branch, as described below.
 | #2         | File System Navigation and Exploration           | https://github.com/danielmoreira/luc-comp141/tree/assignment_2 | 
 | #3         | Manipulating Files and Directories & Redirection | https://github.com/danielmoreira/luc-comp141/tree/assignment_3 | 
 | #4         | Permissions & Processes                          | https://github.com/danielmoreira/luc-comp141/tree/assignment_4 | 
+| #5         | File creation and manipulation with vi           | https://github.com/danielmoreira/luc-comp141/tree/assignment_5 | 
 
 To access a particular assignment, students must clone the assignment's branch,
 as depicted below for *Assignment #2*.
