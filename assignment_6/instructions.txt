@@ -93,14 +93,14 @@ C. Access the remote server with SSH by running the following command after
 replacing <UVID>:
 user@host% ssh <UVID>@jhub.cs.luc.edu
 
-You should see the prompt change to "jhub%" without typing your password.
+You should see the prompt change to "$" without typing your password.
 
 D. Change your default password in the server for security reasons.
 Use the "passwd" command and follow the interactive instructions:
-jhub% passwd
+$ passwd
 
 E. Close the connection with the remote server; use the exit command:
-jhub% exit
+$ exit
 
 
 4. Assignment Instructions
