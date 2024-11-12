@@ -35,15 +35,15 @@ sequence of commands to prepare your file system for the
 assignment.
 
 A. Make the "prepare" script executable. Run with no modifications:
-user@host% chmod a+x prepare.sh
+user@local$ chmod a+x prepare.sh
 
 B. Run with no modifications:
-user@hostp% ./prepare.sh
+user@local$ ./prepare.sh
 
 These commands will create a directory named "comp141_assign6"
 inside your $HOME directory. Use the "ls" command to list the content of
 $HOME and look for it:
-user@host% ls $HOME
+user@local$ ls $HOME
 
 
 3. Remote Server Access Preparation
@@ -58,7 +58,7 @@ PW: <UVID>@luc.edu
 
 A. Verify if your local terminal can reach the remote server.
 Use the "ping" command to contact the server by using its name:
-user@host% ping jhub.cs.luc.edu
+user@local$ ping jhub.cs.luc.edu
 
 Make sure the server is responding; stop the command with "CTRL+c".
 You should see how many data packets were transmitted to and how many
@@ -76,7 +76,7 @@ Elliptic Curve Digital Signature Algorithm (ECDSA), which is one of the
 best solutions for encrypting data keys, including remote server
 access keys. To do it, use the "ssh-keygen" command with the "-t ecdsa"
 type option:
-user@host% ssh-keygen -t ecdsa
+user@local$ ssh-keygen -t ecdsa
 
 Press the [ENTER] return key with empty values for all the interactive
 questions (e.g., standard file name to save the generated keys, and empty
@@ -85,22 +85,22 @@ passphrase).
 B.2. Transfer the generated public key (stored at "~/.ssh/id_ecdsa.pub")
 to the remote server with the "ssh-copy-id" command. Run after replacing
 <UVID>:
-user@host% ssh-copy-id -i ~/.ssh/id_ecdsa.pub <UVID>@jhub.cs.luc.edu
+user@local$ ssh-copy-id -i ~/.ssh/id_ecdsa.pub <UVID>@jhub.cs.luc.edu
 
 Provide your password (detailed in the credentials above) when requested.
 
 C. Access the remote server with SSH by running the following command after
 replacing <UVID>:
-user@host% ssh <UVID>@jhub.cs.luc.edu
+user@local$ ssh <UVID>@jhub.cs.luc.edu
 
-You should see the prompt change to "$" without typing your password.
+You should see the prompt change to "<UVID>@jhub~$" without typing your password.
 
 D. Change your default password in the server for security reasons.
 Use the "passwd" command and follow the interactive instructions:
-$ passwd
+<UVID>@jhub~$ passwd
 
 E. Close the connection with the remote server; use the exit command:
-$ exit
+<UVID>@jhub~$ exit
 
 
 4. Assignment Instructions
