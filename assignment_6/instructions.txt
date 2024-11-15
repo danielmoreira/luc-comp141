@@ -32,9 +32,12 @@ information.
 
 Once inside the "assignment_6" directory, run the following
 sequence of commands to prepare your file system for the
-assignment.
+assignment. Please notice "user@local$" will actually
+be the prompt in your local terminal; you will have to
+execute the commands provided after it.
 
-A. Make the "prepare" script executable. Run with no modifications:
+A. Make the "prepare" script executable. Run the command below
+with no modifications:
 user@local$ chmod a+x prepare.sh
 
 B. Run with no modifications:
@@ -93,7 +96,8 @@ C. Access the remote server with SSH by running the following command after
 replacing <UVID>:
 user@local$ ssh <UVID>@jhub.cs.luc.edu
 
-You should see the prompt change to "<UVID>@jhub~$" without typing your password.
+You should see the prompt change to "<UVID>@jhub~$" without typing your
+password.
 
 D. Change your default password in the server for security reasons.
 Use the "passwd" command and follow the interactive instructions:
