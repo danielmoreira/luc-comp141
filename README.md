@@ -1,4 +1,5 @@
 # LUC COMP 141
+
 ![LUC](luc.png "Loyola University Chicago")
 
 Loyola University Chicago   
@@ -39,29 +40,20 @@ We use [Sakai](https://sakai.luc.edu/) as the online platform to support,
 centralize, and store the course announcements, materials, activities,
 assignments, quizzes, progress reports, and grading communication.
 
-------------
-## This Repo
+----------
+## This Branch
 
-This repository aims at providing version control of the course assignments,
-which shall be cloned by the students to enable training, evaluation, and answer
-submission.
-
-Each assignment is linked to a particular repository branch, as described below.
-
-| Assignment | Topic                                            | Branch                                                         |
-|------------|--------------------------------------------------|----------------------------------------------------------------|
-| #2         | File System Navigation and Exploration           | https://github.com/danielmoreira/luc-comp141/tree/assignment_2 | 
-| #3         | Manipulating Files and Directories & Redirection | https://github.com/danielmoreira/luc-comp141/tree/assignment_3 | 
-| #4         | Permissions & Processes                          | https://github.com/danielmoreira/luc-comp141/tree/assignment_4 | 
-| #5         | File creation and manipulation with vi           | https://github.com/danielmoreira/luc-comp141/tree/assignment_5 | 
-| #6         | Remote access and data compression & archiving   | https://github.com/danielmoreira/luc-comp141/tree/assignment_6 | 
-
-To access a particular assignment, students must clone the assignment's branch,
-as depicted below for *Assignment #2*.
+This branch of the [original repository](https://github.com/danielmoreira/luc-comp141/tree/main)
+is related to *Assignment #4* and shall be cloned by the students to enable
+training, evaluation, and answer submission.
+The command to clone it is below.
 
 ```
-git clone -b assignment_2 https://github.com/danielmoreira/luc-comp141.git
+git clone -b assignment_4 https://github.com/danielmoreira/luc-comp141.git
 ```
+
+The starting point of the assignment is the instructions file
+available [here](https://github.com/danielmoreira/luc-comp141/blob/assignment_4/assignment_4/instructions.txt).
 
 -------------
 ## References

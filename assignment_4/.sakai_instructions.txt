@@ -1,0 +1,34 @@
+Hi everyone,
+
+This is our fourth assignment.
+Please follow the steps below to download the instructions to your Unix-like terminal.
+You will need to work on the terminal to execute the instructions and obtain the answers, which you will then submit here in the available text box.
+Let me know if you face any issues or have any questions while doing it.
+
+Cheers,
+-- Daniel
+
+
+1. Download the Instructions
+Execute the following command on your terminal. Make sure Git was previously installed (see Homework #2):
+
+git clone -b assignment_4 https://github.com/danielmoreira/luc-comp141.git luc-comp141-assign4
+
+This command will create a folder named "luc-comp141-assign4" in the current working directory.
+Verify if the folder was created by running:
+
+ls luc-comp141-assign4
+
+
+
+2. Open and Follow the Instructions
+Change the working directory to the folder "luc-comp141-assign4/assignment_4":
+
+cd luc-comp141-assign4/assignment_4
+
+Read the content of the file named "instructions.txt" and follow the instructions carefully.
+To read the file content, you can use the "less" command:
+
+less instructions.txt
+
+Use the keyboard arrows up and down to navigate the file content and press "q" to quit.

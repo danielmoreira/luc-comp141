@@ -1,0 +1,89 @@
+COMP 141 / 400D - Intro to Computing Tools and Techniques
+Loyola University Chicago, Fall 2024
+Assignment #4: Permissions & Processes
+Total: 10 points
+Due date: Oct 27, 11:55 PM CT
+--------------
+
+
+1. Introduction
+This document contains the instructions to answer
+the fourth assignment of the COMP 141 / 400D course.
+This assignment aims to train and evaluate the students'
+abilities to kill a process and manage file permissions.
+
+
+2. File System Preparation
+If you are reading these instructions, it means you have
+successfully executed the "git" command to clone the
+"assignment_4" branch of the project hosted at
+"https://github.com/danielmoreira/luc-comp141" to your
+local Unix-like system. FYI, we will learn Git toward the
+end of the course.
+
+It also means you have found the cloned directory named
+"assignment_4" within your file system. Make sure to have
+it set as your current working directory by using the
+"change directory" (cd) command to reach it. Use the
+"print working directory" (pwd) command to confirm this
+information.
+
+Once inside the "assignment_4" directory, run the following
+sequence of commands to prepare your file system for the
+assignment.
+
+A. Make the "prepare" script executable. Run with no modifications:
+chmod a+x prepare.sh
+
+B. Run with no modifications:
+./prepare.sh
+
+These commands will create a directory named "comp141_assign4"
+inside your $HOME directory (https://en.wikipedia.org/wiki/Home_directory).
+Use the "ls" command to list the content of $HOME and look for it:
+ls $HOME
+
+
+3. Assignment Instructions
+After successfully executing item 2 above, do the following tasks
+by using the command line. Do not use a graphical user interface.
+
+3.1. Change the working directory to "comp141_assign4".
+
+3.2. Change the permission of the script available as "vir.sh" to make it executable.
+
+3.3. Run after replacing <UVID> with your LUC universal
+identification (https://www.luc.edu/its/uvidinformation/):
+./vir.sh <UVID>
+
+Here is the command example for Prof. Moreira's UVID for a reference:
+./vir.sh dmoreira1
+
+3.4. Kill the process related to the execution of the "vir.sh" script.
+You will have 5 minutes to discover its Process ID (PID)  with "ps" or "top" and kill it.
+If you do not kill it within the 5 minutes, you will fail the assignment;
+if that's the case, go back to item 3.3 above and retry it.
+ATTENTION: closing the terminal window with the "X" button WILL NOT kill the program.
+You will fail the assignment if you do it.
+
+3.5. Check the content of the file saved as "code.txt" within the current directory.
+Make sure you have the permission to read it.
+ATTENTION: there will be no "code.txt" file if you failed to kill the process in item 3.4.
+
+3.6. Submit your answer to Sakai (https://sakai.luc.edu/x/u80AXl)
+by using the available text box. Type in the text box the following information:
+* Line 1: your UVID.
+* Line 2: the content of the "code.txt" file, related to item 3.5.
+
+Here is the answer key example for Prof. Moreira's UVID
+for a reference. Ignore the "--------------" lines:
+--------------
+dmoreira1
+900
+--------------
+
+If you answer item 3.6 correctly, your will receive 10 points for the assignment.
+
+
+Thanks for your attention with these exercises.
+This is the end of the instructions file.
