@@ -1,0 +1,138 @@
+COMP 141 / 400D - Intro to Computing Tools and Techniques
+Loyola University Chicago, Fall 2024
+Assignment #6: Remote access and data compression & archiving
+Total: 10 points
+Due date: Nov 24, 11:55 PM CT
+--------------
+
+
+1. Introduction
+This document contains the instructions to answer
+the sixth assignment of the COMP 141 / 400D course.
+This assignment aims to train and evaluate the students'
+abilities to access a remote server, and compress, archive,
+and transfer data from the local host to the server and
+vice-versa.
+
+
+2. Local File System Preparation
+If you are reading these instructions, it means you have
+successfully executed the "git" command to clone the
+"assignment_6" branch of the project hosted at
+"https://github.com/danielmoreira/luc-comp141" to your
+local Unix-like system. FYI, we will learn Git toward the
+end of the course.
+
+It also means you have found the cloned directory named
+"assignment_6" within your local file system. Make sure to
+have it set as your current working directory by using the
+"change directory" (cd) command to reach it. Use the
+"print working directory" (pwd) command to confirm this
+information.
+
+Once inside the "assignment_6" directory, run the following
+sequence of commands to prepare your file system for the
+assignment. Please notice "user@local$" will actually
+be the prompt in your local terminal; you will have to
+execute the commands provided after it.
+
+A. Make the "prepare" script executable. Run the command below
+with no modifications:
+user@local$ chmod a+x prepare.sh
+
+B. Run with no modifications:
+user@local$ ./prepare.sh
+
+These commands will create a directory named "comp141_assign6"
+inside your $HOME directory. Use the "ls" command to list the content of
+$HOME and look for it:
+user@local$ ls $HOME
+
+
+3. Remote Server Access Preparation
+The name of the remote server we will use is:
+jhub.cs.luc.edu
+
+A user account was created for each student in the remote server.
+Your credentials should be the following, after replacing <UVID>
+with your LUC universal identification (https://www.luc.edu/its/uvidinformation/):
+User: <UVID>
+PW: <UVID>@luc.edu
+
+A. Verify if your local terminal can reach the remote server.
+Use the "ping" command to contact the server by using its name:
+user@local$ ping jhub.cs.luc.edu
+
+Make sure the server is responding; stop the command with "CTRL+c".
+You should see how many data packets were transmitted to and how many
+were received by the server.
+
+ATTENTION: if no data packets were received, please contact the
+instructor and TAs right away. You will need Internet connection to
+answer this assignment. If you are not connected through the "LUC" network,
+log in to the GlobalProtect application following the steps described at
+https://www.luc.edu/its/informationsecurity/resources/loyolasecureaccess/globalprotect.
+
+B. Configure your access to the server with a Secure Shell (SSH) key.
+B.1. In your local Unix-like terminal, create a pair of SSH keys with the
+Elliptic Curve Digital Signature Algorithm (ECDSA), which is one of the
+best solutions for encrypting data keys, including remote server
+access keys. To do it, use the "ssh-keygen" command with the "-t ecdsa"
+type option:
+user@local$ ssh-keygen -t ecdsa
+
+Press the [ENTER] return key with empty values for all the interactive
+questions (e.g., standard file name to save the generated keys, and empty
+passphrase).
+
+B.2. Transfer the generated public key (stored at "~/.ssh/id_ecdsa.pub")
+to the remote server with the "ssh-copy-id" command. Run after replacing
+<UVID>:
+user@local$ ssh-copy-id -i ~/.ssh/id_ecdsa.pub <UVID>@jhub.cs.luc.edu
+
+Provide your password (detailed in the credentials above) when requested.
+
+C. Access the remote server with SSH by running the following command after
+replacing <UVID>:
+user@local$ ssh <UVID>@jhub.cs.luc.edu
+
+You should see the prompt change to "<UVID>@jhub~$" without typing your
+password.
+
+D. Change your default password in the server for security reasons.
+Use the "passwd" command and follow the interactive instructions:
+<UVID>@jhub~$ passwd
+
+E. Close the connection with the remote server; use the exit command:
+<UVID>@jhub~$ exit
+
+
+4. Assignment Instructions
+After successfully executing items 2 and 3 above, do the following tasks
+by using the command line. Do not use a graphical user interface.
+
+4.1. Change the local working directory to "~/comp141_assign6".
+
+4.2. Transfer the script file named "data_gen.sh" to the remote server.
+
+4.3. Access the script in the server and run it remotely.
+Make sure the script file has the correct permissions.
+After running the script, a folder will be generated at
+"~/assign6_output"; make sure you find it in the server file system.
+
+4.4. Archive and compress the content of the generated "~/assign6_output"
+folder by combining the "tar" and "gzip" commands.
+
+4.5. Transfer the compressed and archived file back to your local machine.
+Upload it to Sakai.
+
+
+You will get up to 10 points if you accomplish the following tasks:
+* 2.5 points for accomplishing item 4.2;
+* 2.5 points for accomplishing item 4.3;
+* 2.5 points for accomplishing item 4.4;
+* 2.5 points for accomplishing item 4.5.
+
+
+Thanks for your attention with these exercises.
+This is the end of the instructions file.
