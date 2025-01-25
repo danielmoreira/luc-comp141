@@ -57,7 +57,7 @@ pwd_folder=$(pwd)
 total_images=0
 
 # saves the given key to compute the number of images for further reference
-echo "$1" > .uvid.txt
+echo "$1" >.uvid.txt
 
 # Step 1.
 # create the basis folder (comp141_assign2) within $HOME
@@ -116,7 +116,7 @@ current_images=$(add_files $folder "$pwd_folder/data/images" "$image_count" "$pw
 total_images=$((total_images + current_images))
 
 # Step 7.
-# add images to folder_04
+# add images to folder_05
 folder="folder_01/folder_03/folder_05"
 image_count=$(file_count "$1" 5)
 file_count=$(file_count "$1" 8)
@@ -124,7 +124,7 @@ current_images=$(add_files $folder "$pwd_folder/data/images" "$image_count" "$pw
 total_images=$((total_images + current_images))
 
 # Step 8.
-# add images to folder_04
+# add images to folder_06
 folder="folder_01/folder_03/folder_06"
 image_count=$(file_count "$1" 6)
 file_count=$(file_count "$1" 7)

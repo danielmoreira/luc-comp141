@@ -2,7 +2,7 @@ COMP 141 / 400D - Intro to Computing Tools and Techniques
 Loyola University Chicago, Fall 2024
 Assignment #2: File System Navigation and Exploration
 Total: 10 points
-Due date: Sep 22, 11:55 PM CT
+Due date: Feb 9, 11:59 PM CT
 --------------
 
 
@@ -12,7 +12,7 @@ the second assignment of the COMP 141 / 400D course.
 This assignment aims to train and evaluate the students'
 abilities to navigate in a UNIX-like file system hierarchy
 with the "cd" command, and collect file and directory
-information by using commands such as "ls", and "file".
+information by using commands such as "ls" and "file".
 
 
 2. File System Preparation
@@ -36,15 +36,15 @@ assignment. FYI, we will learn the meaning of these commands
 in the upcoming weeks of the course.
 
 A. Run with no modifications:
-chmod a+x prepare.sh
+chmod a+x install.sh
 
 B. Run after replacing <UVID> with your LUC universal
 identification (https://www.luc.edu/its/uvidinformation/):
-./prepare.sh <UVID>
+./install.sh <UVID>
 
 Here is the command example for Prof. Moreira's UVID
 for a reference:
-./prepare.sh dmoreira1
+./install.sh dmoreira1
 
 These commands will create a directory named "comp141_assign2"
 inside your $HOME directory (https://en.wikipedia.org/wiki/Home_directory).
@@ -69,7 +69,7 @@ help you count the number of images. Tip: use the "file"
 command to verify which files are indeed images.
 
 3.4. Submit your answers to Sakai (https://sakai.luc.edu/x/u80AXl)
-by using the "inline submission" of "Homework 2". Type in the
+by using the "inline submission" of "Assignment #2". Type in the
 proper text box the following information:
 * Line 1: your UVID.
 * Line 2: the number of directories and subdirectories you've found

@@ -2,7 +2,8 @@ Hi everyone,
 
 This is our second assignment.
 Please follow the steps below to download the instructions to your Unix-like terminal.
-You will need to work on the terminal to execute the instructions and obtain the answers, which you will then submit here in the available text box.
+You will need to work on the terminal to execute the instructions and obtain the answers, which you will then submit
+here in the available text box.
 Let me know if you face any issues or have any questions while doing it.
 
 Cheers,
@@ -32,7 +33,7 @@ Observe that characters do not display when you type passwords.
 2. Download the Instructions
 Execute the following command on your terminal after Git is successfully installed:
 
-git clone -b assignment_2 https://github.com/danielmoreira/luc-comp141.git luc-comp141-assign2
+git clone --depth=1 -b assignment_2 https://github.com/danielmoreira/luc-comp141.git luc-comp141-assign2
 
 This command will create a folder named "luc-comp141-assign2" in the current working directory.
 Verify if the folder was created by running:
