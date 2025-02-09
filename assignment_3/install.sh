@@ -8,7 +8,7 @@
 # $1: key to serve as the basis for the computation of the number of images to copy around; use UVID
 
 # usage example:
-# ./prepare.sh dmoreira1
+# ./install.sh dmoreira1
 ##############
 
 echo "Creating directory for $1."

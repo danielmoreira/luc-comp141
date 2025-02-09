@@ -11,24 +11,27 @@ fi
 mkdir temp
 cp images/*.jpg temp
 
+call_count=1
 img_list=()
-while IFS='' read -r line; do img_list+=("$line"); done < <(jpg_select temp "$uvid")
+while IFS='' read -r line; do img_list+=("$line"); done < <(jpg_select temp "$uvid" $call_count)
 for img in "${img_list[@]}"; do
   rm "$img"
 done
 train_images=${#img_list[@]}
 total=$train_images
 
+call_count=$((call_count + 1))
 img_list=()
-while IFS='' read -r line; do img_list+=("$line"); done < <(jpg_select temp "$uvid")
+while IFS='' read -r line; do img_list+=("$line"); done < <(jpg_select temp "$uvid" $call_count)
 for img in "${img_list[@]}"; do
   rm "$img"
 done
 test_images=${#img_list[@]}
 total=$((total + test_images))
 
+call_count=$((call_count + 1))
 img_list=()
-while IFS='' read -r line; do img_list+=("$line"); done < <(jpg_select temp "$1")
+while IFS='' read -r line; do img_list+=("$line"); done < <(jpg_select temp "$1" $call_count)
 for img in "${img_list[@]}"; do
   rm "$img"
 done

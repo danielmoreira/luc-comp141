@@ -36,15 +36,15 @@ assignment. FYI, we will learn the meaning of these commands
 in the upcoming weeks of the course.
 
 A. Run with no modifications:
-chmod a+x prepare.sh
+chmod a+x install.sh
 
 B. Run after replacing <UVID> with your LUC universal
 identification (https://www.luc.edu/its/uvidinformation/):
-./prepare.sh <UVID>
+./install.sh <UVID>
 
 Here is the command example for Prof. Moreira's UVID
 for a reference:
-./prepare.sh dmoreira1
+./install.sh dmoreira1
 
 These commands will create a directory named "comp141_assign3"
 inside your $HOME directory (https://en.wikipedia.org/wiki/Home_directory).
@@ -86,15 +86,18 @@ are there inside the "test" folder after you moved the files?
 
 3.7. List the images of the "train" directory sorted by disk size
 from the smallest to the largest and save the result in a text file
-named "comp141_assign3/train_list.txt".
+named "comp141_assign3/train_list.txt". Use the "long" and
+"human-readable" options to list the images.
 
 3.8. List the images of the "validation" directory sorted by disk
 size from the smallest to the largest and save the result in a text
-file named "comp141_assign3/valid_list.txt".
+file named "comp141_assign3/valid_list.txt". Use the "long" and
+"human-readable" options to list the images.
 
 3.9. List the images of the "test" directory sorted by disk size
 from the smallest to the largest and save the result in a text file
-named "comp141_assign3/test_list.txt".
+named "comp141_assign3/test_list.txt". Use the "long" and
+"human-readable" options to list the images.
 
 3.10. Remove the "images" folder completely and save the output of the
 "tree" command inside a text file name "comp141_assign3/tree.txt".
