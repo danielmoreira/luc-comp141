@@ -1,5 +1,5 @@
 COMP 141 / 400D - Intro to Computing Tools and Techniques
-Loyola University Chicago, Fall 2024
+Loyola University Chicago, Spring 2025
 Assignment #2: File System Navigation and Exploration
 Total: 10 points
 Due date: Feb 9, 11:59 PM CT
@@ -68,7 +68,7 @@ subdirectories of "comp141_assign2"? Use a side note to
 help you count the number of images. Tip: use the "file"
 command to verify which files are indeed images.
 
-3.4. Submit your answers to Sakai (https://sakai.luc.edu/x/u80AXl)
+3.4. Submit your answers to Sakai (https://sakai.luc.edu/x/FHTQb1)
 by using the "inline submission" of "Assignment #2". Type in the
 proper text box the following information:
 * Line 1: your UVID.
