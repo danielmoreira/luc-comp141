@@ -1,8 +1,8 @@
 COMP 141 / 400D - Intro to Computing Tools and Techniques
-Loyola University Chicago, Fall 2024
+Loyola University Chicago, Spring 2025
 Assignment #3: Manipulating Files and Directories & Redirection
 Total: 15 points
-Due date: Oct 08, 11:55 PM CT
+Due date: Feb 23, 11:59 PM CT
 --------------
 
 
@@ -102,7 +102,7 @@ named "comp141_assign3/test_list.txt". Use the "long" and
 3.10. Remove the "images" folder completely and save the output of the
 "tree" command inside a text file name "comp141_assign3/tree.txt".
 
-3.11. Submit your answers to Sakai (https://sakai.luc.edu/x/u80AXl)
+3.11. Submit your answers to Sakai (https://sakai.luc.edu/x/FHTQb1)
 by using the available text box and the "Attachments" feature of "Homework 3".
 Type in the text box the following information:
 * Line 1: your UVID.
