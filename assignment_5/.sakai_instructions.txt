@@ -12,7 +12,7 @@ Cheers,
 1. Download the Instructions
 Execute the following command on your terminal. Make sure Git was previously installed (see Homework #2):
 
-git clone -b assignment_5 https://github.com/danielmoreira/luc-comp141.git luc-comp141-assign5
+git clone --depth=1 -b assignment_5 https://github.com/danielmoreira/luc-comp141.git luc-comp141-assign5
 
 This command will create a folder named "luc-comp141-assign5" in the current working directory.
 Verify if the folder was created by running:

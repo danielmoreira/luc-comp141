@@ -5,7 +5,7 @@
 # application of Assignment #5 (COMP 141).
 
 # usage example:
-# ./prepare.sh
+# ./install.sh
 ##############
 
 echo "Copying program to your home directory."

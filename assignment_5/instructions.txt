@@ -1,8 +1,8 @@
 COMP 141 / 400D - Intro to Computing Tools and Techniques
-Loyola University Chicago, Fall 2024
+Loyola University Chicago, Spring 2025
 Assignment #5: Using vi
 Total: 10 points
-Due date: Nov 10, 11:55 PM CT
+Due date: Mar 30, 11:59 PM CT
 --------------
 
 
@@ -32,11 +32,11 @@ Once inside the "assignment_5" directory, run the following
 sequence of commands to prepare your file system for the
 assignment.
 
-A. Make the "prepare" script executable. Run with no modifications:
-chmod a+x prepare.sh
+A. Make the "install" script executable. Run with no modifications:
+chmod a+x install.sh
 
 B. Run with no modifications:
-./prepare.sh
+./install.sh
 
 These commands will create a directory named "comp141_assign5"
 inside your $HOME directory (https://en.wikipedia.org/wiki/Home_directory).
