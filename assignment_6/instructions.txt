@@ -1,8 +1,8 @@
 COMP 141 / 400D - Intro to Computing Tools and Techniques
-Loyola University Chicago, Fall 2024
+Loyola University Chicago, Spring 2025
 Assignment #6: Remote access and data compression & archiving
 Total: 10 points
-Due date: Nov 24, 11:55 PM CT
+Due date: Apr 13, 11:59 PM CT
 --------------
 
 
@@ -41,7 +41,7 @@ with no modifications:
 user@local$ chmod a+x prepare.sh
 
 B. Run with no modifications:
-user@local$ ./prepare.sh
+user@local$ ./install.sh
 
 These commands will create a directory named "comp141_assign6"
 inside your $HOME directory. Use the "ls" command to list the content of
