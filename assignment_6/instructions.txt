@@ -36,9 +36,13 @@ assignment. Please notice "user@local$" will actually
 be the prompt in your local terminal; you will have to
 execute the commands provided after it.
 
-A. Make the "prepare" script executable. Run the command below
+A. Make the "install" script executable. Run the command below
 with no modifications:
-user@local$ chmod a+x prepare.sh
+user@local$ chmod a+x install.sh
+
+Repair that "user@local$" above represents the prompt in your local terminal.
+The command you should actually type is the remaining part:
+chmod a+x install.sh
 
 B. Run with no modifications:
 user@local$ ./install.sh
