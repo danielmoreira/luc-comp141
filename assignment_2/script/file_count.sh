@@ -14,9 +14,9 @@ file_count() {
 
   for ((i = 0; i < ${#key}; i++)); do
     ascii=$(printf "%d" "'${key:$i:1}")
-    sum=$((sum + ascii))
+    sum=$(((sum + ascii) * folder))
   done
 
-  value=$(((sum + folder) * folder % max_file + 1))
+  value=$((sum % max_file + 1))
   echo $value
 }
