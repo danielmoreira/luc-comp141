@@ -75,7 +75,7 @@ for a reference. Ignore the "--------------" lines:
 --------------
 dmoreira1
 6
-17
+27
 --------------
 
 If you answer items 3.2 and 3.3 correctly, you'll receive
