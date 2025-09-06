@@ -22,7 +22,7 @@ For MacOS users:
 
 brew install git
 
-For WSL and Ubuntu (or another Debian-based distribution) users:
+For WSL and Ubuntu (or other Debian-based distributions) users:
 
 sudo apt install git
 

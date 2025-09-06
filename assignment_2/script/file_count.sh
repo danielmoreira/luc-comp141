@@ -6,7 +6,7 @@
 # $2: folder number/position
 file_count() {
   sum=0
-  max_file=5 # max number of files
+  max_file=7 # max number of files
 
   # function parameters
   key=$1
