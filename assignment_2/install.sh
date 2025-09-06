@@ -5,7 +5,7 @@
 # for the application of Assignment #2 (COMP 141).
 
 # parameter
-# $1: key to serve as the basis for the computation of the number of files; use UVID
+# $1: key to serve as the basis for the computation of the number of files; use UVID.
 
 # usage example:
 # ./install.sh dmoreira1

@@ -31,22 +31,16 @@ it set as your current working directory by using the
 information.
 
 Once inside the "assignment_2" directory, run the following
-sequence of commands to prepare your file system for the
-assignment. FYI, we will learn the meaning of these commands
-in the upcoming weeks of the course.
-
-A. Run with no modifications:
-chmod a+x install.sh
-
-B. Run after replacing <UVID> with your LUC universal
-identification (https://www.luc.edu/its/uvidinformation/):
+command to prepare your file system for the assignment,
+after replacing <UVID> with your LUC universal identification
+(https://www.luc.edu/its/uvidinformation/):
 ./install.sh <UVID>
 
 Here is the command example for Prof. Moreira's UVID
 for a reference:
 ./install.sh dmoreira1
 
-These commands will create a directory named "comp141_assign2"
+This command will create a directory named "comp141_assign2"
 inside your $HOME directory (https://en.wikipedia.org/wiki/Home_directory).
 Use the "ls" command to list the content of $HOME and look for it:
 ls $HOME
