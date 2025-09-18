@@ -1,8 +1,8 @@
 COMP 141 / 400D - Intro to Computing Tools and Techniques
-Loyola University Chicago, Spring 2025
+Loyola University Chicago, Fall 2025
 Assignment #3: Manipulating Files and Directories & Redirection
 Total: 15 points
-Due date: Feb 23, 11:59 PM CT
+Due date: Oct 5, 11:59 PM CT
 --------------
 
 
@@ -31,15 +31,9 @@ it set as your current working directory by using the
 information.
 
 Once inside the "assignment_3" directory, run the following
-sequence of commands to prepare your file system for the
-assignment. FYI, we will learn the meaning of these commands
-in the upcoming weeks of the course.
-
-A. Run with no modifications:
-chmod a+x install.sh
-
-B. Run after replacing <UVID> with your LUC universal
-identification (https://www.luc.edu/its/uvidinformation/):
+command to prepare your file system for the assignment,
+after replacing <UVID> with your LUC universal identification
+(https://www.luc.edu/its/uvidinformation/):
 ./install.sh <UVID>
 
 Here is the command example for Prof. Moreira's UVID
@@ -103,7 +97,7 @@ named "comp141_assign3/test_list.txt". Use the "long" and
 "tree" command inside a text file name "comp141_assign3/tree.txt".
 
 3.11. Submit your answers to Sakai (https://sakai.luc.edu/x/FHTQb1)
-by using the available text box and the "Attachments" feature of "Homework 3".
+by using the available text box and the "Attachments" feature of "Assignment #3".
 Type in the text box the following information:
 * Line 1: your UVID.
 * Line 2: the number of images counted in item 3.2.

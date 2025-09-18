@@ -63,7 +63,7 @@ for img in "${img_list[@]}"; do
 done
 
 # Last Step.
-# remove the temp folder and return the original one
+# remove the temp folder and return to the original one
 rm -r temp
 cd "$pwd_folder" || (
   echo "[ERROR 03] Contact instructor."
