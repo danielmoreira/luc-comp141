@@ -9,7 +9,7 @@ fi
 code=0
 for ((i = 0; i < ${#uvid}; i++)); do
   ascii=$(printf "%d" "'${uvid:$i:1}")
-  code=$((code + ascii))
+  code=$((code + ascii * 7))
 done
 
 echo "$uvid"

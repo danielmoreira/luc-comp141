@@ -1,8 +1,8 @@
 COMP 141 / 400D - Intro to Computing Tools and Techniques
-Loyola University Chicago, Spring 2025
+Loyola University Chicago, Fall 2025
 Assignment #4: Permissions & Processes
 Total: 10 points
-Due date: Mar 16, 11:59 PM CT
+Due date: Oct 26, 11:59 PM CT
 --------------
 
 
@@ -29,13 +29,7 @@ it set as your current working directory by using the
 information.
 
 Once inside the "assignment_4" directory, run the following
-sequence of commands to prepare your file system for the
-assignment.
-
-A. Make the "install" script executable. Run with no modifications:
-chmod a+x install.sh
-
-B. Run with no modifications:
+command to prepare your file system for the assignment:
 ./install.sh
 
 These commands will create a directory named "comp141_assign4"

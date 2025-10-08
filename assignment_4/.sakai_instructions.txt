@@ -10,7 +10,7 @@ Cheers,
 
 
 1. Download the Instructions
-Execute the following command on your terminal. Make sure Git was previously installed (see Homework #2):
+Execute the following command on your terminal. Make sure Git was previously installed (see Assignment #2):
 
 git clone --depth=1 -b assignment_4 https://github.com/danielmoreira/luc-comp141.git luc-comp141-assign4
 
