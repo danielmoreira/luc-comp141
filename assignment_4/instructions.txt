@@ -73,7 +73,7 @@ Here is the answer key example for Prof. Moreira's UVID
 for a reference. Ignore the "--------------" lines:
 --------------
 dmoreira1
-900
+6300
 --------------
 
 If you answer item 3.6 correctly, your will receive 10 points for the assignment.
