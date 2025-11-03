@@ -2,7 +2,7 @@
 # Script to create several files and folders in the current file system.
 
 # number of folders to create
-TOTAL_FOLDERS=1200
+TOTAL_FOLDERS=2400
 
 # creates the base dir if it does not exist
 BASE_DIR="$HOME/assign6_output"

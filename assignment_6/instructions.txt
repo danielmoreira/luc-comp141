@@ -1,8 +1,8 @@
 COMP 141 / 400D - Intro to Computing Tools and Techniques
-Loyola University Chicago, Spring 2025
+Loyola University Chicago, Fall 2025
 Assignment #6: Remote access and data compression & archiving
 Total: 10 points
-Due date: Apr 13, 11:59 PM CT
+Due date: Nov 23, 11:59 PM CT
 --------------
 
 
@@ -30,27 +30,17 @@ have it set as your current working directory by using the
 "print working directory" (pwd) command to confirm this
 information.
 
-Once inside the "assignment_6" directory, run the following
-sequence of commands to prepare your file system for the
-assignment. Please notice "user@local$" will actually
-be the prompt in your local terminal; you will have to
-execute the commands provided after it.
-
-A. Make the "install" script executable. Run the command below
-with no modifications:
-user@local$ chmod a+x install.sh
-
-Repair that "user@local$" above represents the prompt in your local terminal.
-The command you should actually type is the remaining part:
-chmod a+x install.sh
-
-B. Run with no modifications:
-user@local$ ./install.sh
+Once inside the "assignment_6" directory, run the command
+below to prepare your file system for the assignment.
+Please notice that the added "user@localhost$" portion
+will actually be the prompt in your local terminal; you will
+have to remove it before executing the requested command.
+user@localhost$ ./install.sh
 
 These commands will create a directory named "comp141_assign6"
 inside your $HOME directory. Use the "ls" command to list the content of
 $HOME and look for it:
-user@local$ ls $HOME
+user@localhost$ ls $HOME
 
 
 3. Remote Server Access Preparation
@@ -65,7 +55,7 @@ PW: <UVID>@luc.edu
 
 A. Verify if your local terminal can reach the remote server.
 Use the "ping" command to contact the server by using its name:
-user@local$ ping jhub.cs.luc.edu
+user@localhost$ ping jhub.cs.luc.edu
 
 Make sure the server is responding; stop the command with "CTRL+c".
 You should see how many data packets were transmitted to and how many
@@ -83,7 +73,7 @@ Elliptic Curve Digital Signature Algorithm (ECDSA), which is one of the
 best solutions for encrypting data keys, including remote server
 access keys. To do it, use the "ssh-keygen" command with the "-t ecdsa"
 type option:
-user@local$ ssh-keygen -t ecdsa
+user@localhost$ ssh-keygen -t ecdsa
 
 Press the [ENTER] return key with empty values for all the interactive
 questions (e.g., standard file name to save the generated keys, and empty
@@ -92,13 +82,13 @@ passphrase).
 B.2. Transfer the generated public key (stored at "~/.ssh/id_ecdsa.pub")
 to the remote server with the "ssh-copy-id" command. Run after replacing
 <UVID>:
-user@local$ ssh-copy-id -i ~/.ssh/id_ecdsa.pub <UVID>@jhub.cs.luc.edu
+user@localhost$ ssh-copy-id -i ~/.ssh/id_ecdsa.pub <UVID>@jhub.cs.luc.edu
 
 Provide your password (detailed in the credentials above) when requested.
 
 C. Access the remote server with SSH by running the following command after
 replacing <UVID>:
-user@local$ ssh <UVID>@jhub.cs.luc.edu
+user@localhost$ ssh <UVID>@jhub.cs.luc.edu
 
 You should see the prompt change to "<UVID>@jhub~$" without typing your
 password.
