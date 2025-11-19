@@ -38,8 +38,8 @@ rm -f ./gt_3.5.txt ./st_3.5.txt ./cp_3.5.txt
 head -n $((LINE_COUNT_35 + LINE_COUNT_361)) "$1" | tail -n  $LINE_COUNT_361 > ./gt_3.6.1.txt
 cp "$2" ./st_3.6.1.txt
 
-sed -i '' "s/\$HOME/#HOME/g" ./gt_3.6.1.txt
-sed -i '' "s/\$HOME/#HOME/g" ./st_3.6.1.txt
+sed -i '' "s/\$HOME/#HOME/g" ./gt_3.6.1.txt 2>/dev/null
+sed -i '' "s/\$HOME/#HOME/g" ./st_3.6.1.txt 2>/dev/null
 
 PIPE_PROB=0
 PIPE_PROB_MSG="all \"|\" replaced (ok)"
@@ -47,17 +47,17 @@ PIPE=$(grep "|" ./st_3.6.1.txt)
 if [ -n "$PIPE" ]; then
   PIPE_PROB=1
   PIPE_PROB_MSG="there are still \"|\" chars"
-  sed -i '' "s/|/,/g" ./st_3.6.1.txt
+  sed -i '' "s/|/,/g" ./st_3.6.1.txt 2>/dev/null
 fi
 
 HOME_PROB=0
 HOMEP=$(grep "/home/comp141" ./st_3.6.1.txt)
 if [ -n "$HOMEP" ]; then
   HOME_PROB=1
-  sed -i '' "s/\/home\/comp141/#HOME/g" ./st_3.6.1.txt
+  sed -i '' "s/\/home\/comp141/#HOME/g" ./st_3.6.1.txt 2>/dev/null
 fi
 
-sed '1!G;h;$!d' ./gt_3.6.1.txt > ./tg_3.6.1.txt
+sed '1!G;h;$!d' ./gt_3.6.1.txt > ./tg_3.6.1.txt 2>/dev/null
 
 LINE_1_361=0
 while IFS= read -r line; do
@@ -114,16 +114,16 @@ rm -f ./gt_3.6.1.txt ./tg_3.6.1.txt ./st_3.6.1.txt ./cp_3.6.1.txt
 tail -n $LINE_COUNT_362 "$1" > ./gt_3.6.2.txt
 cp "$2" ./st_3.6.2.txt
 
-sed -i '' "s/\$HOME/#HOME/g" ./gt_3.6.2.txt
-sed -i '' "s/\$HOME/#HOME/g" ./st_3.6.2.txt
+sed -i '' "s/\$HOME/#HOME/g" ./gt_3.6.2.txt 2>/dev/null
+sed -i '' "s/\$HOME/#HOME/g" ./st_3.6.2.txt 2>/dev/null
 
 HOMEP=$(grep "/home/comp141" ./st_3.6.2.txt)
 if [ -n "$HOMEP" ]; then
   HOME_PROB=1
-  sed -i '' "s/\/home\/comp141/#HOME/g" ./st_3.6.2.txt
+  sed -i '' "s/\/home\/comp141/#HOME/g" ./st_3.6.2.txt 2>/dev/null
 fi
 
-sed '1!G;h;$!d' ./gt_3.6.2.txt > ./tg_3.6.2.txt
+sed '1!G;h;$!d' ./gt_3.6.2.txt > ./tg_3.6.2.txt 2>/dev/null
 
 LINE_1_362=0
 while IFS= read -r line; do
