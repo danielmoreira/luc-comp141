@@ -7,7 +7,7 @@ here in the available text box.
 Let me know if you face any issues or have any questions while doing it.
 
 Cheers,
--- Daniel
+-- The Instructor
 
 
 1. Git Installation
