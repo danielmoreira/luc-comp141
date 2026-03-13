@@ -1,8 +1,8 @@
 COMP 141 / 400D - Intro to Computing Tools and Techniques
-Loyola University Chicago, Fall 2025
+Loyola University Chicago, Spring 2026
 Assignment #5: Using vi
 Total: 10 points
-Due date: Nov 9, 11:59 PM CT
+Due date: Mar 29, 11:59 PM CT
 --------------
 
 
@@ -45,13 +45,13 @@ by using vi and the command line. Do not use a graphical user interface.
 3.1. Change the working directory to "comp141_assign5".
 
 3.2. Check the content of the directory. You must find the following text files:
-* File 1: profiles_2015.csv (with 10,379 lines)
-* File 2: profiles_2024.csv (with 32,114 lines)
+* File 1: profiles_2016.csv (with 10,379 lines)
+* File 2: profiles_2026.csv (with 32,114 lines)
 
 3.3. Verify the number of lines within each file, to make sure you have got
 non-corrupted versions.
 
-3.4. Open both files and a new third one named 'profiles_2025.csv' with vi.
+3.4. Open both files and a new third one named 'profiles_total.csv' with vi.
 
 3.5. Transfer the header of "File 2" to the new file.
 The header comprises the first lines of the file that start with a "#".
@@ -63,19 +63,20 @@ Replace every '|' delimiter with ','.
 
 Here is an example of a modified line after replacement:
 Original:
-1|/home/comp141/profile_system/pictures/077454.png|Knox Zev|2012/10/17|1988/9/5|Chicago|India|167|94|Pilot
+1|/home/comp141/profile_system/pictures/904293.png|Chozen Aurelio|2011/7/12|1994/11/15|Austin|China|189|66|Artist
 Modified:
-1,/home/comp141/profile_system/pictures/077454.png,Knox Zev,2012/10/17,1988/9/5,Chicago,India,167,94,Pilot
+1,/home/comp141/profile_system/pictures/904293.png,Chozen Aurelio,2011/7/12,1994/11/15,Austin,China,189,66,Artist
 
 3.6.2. Append the content of "File 2", after removing its lines 10,001 -- 13,000.
+For confirmation, observe that line 10,001 starts with ID 20364.
 Do not repeat its header.
 
 3.7. Replace the fixed home directory "/home/comp141" with the following string: "$HOME".
 Here is an example of a line after replacement:
 Original:
-1,/home/comp141/profile_system/pictures/077454.png,Knox Zev,2012/10/17,1988/9/5,Chicago,India,167,94,Pilot
+1,/home/comp141/profile_system/pictures/904293.png,Chozen Aurelio,2011/7/12,1994/11/15,Austin,China,189,66,Artist
 Modified:
-1,$HOME/profile_system/pictures/077454.png,Knox Zev,2012/10/17,1988/9/5,Chicago,India,167,94,Pilot
+1,$HOME/profile_system/pictures/904293.png,Chozen Aurelio,2011/7/12,1994/11/15,Austin,China,189,66,Artist
 
 3.8. Remove all the lines in the new file that have one or more "none" values.
 

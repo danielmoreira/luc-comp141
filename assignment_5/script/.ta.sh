@@ -12,12 +12,14 @@ LINE_COUNT_362=$((39483-LINE_COUNT_35-LINE_COUNT_361)) # file's 2 number of line
 # holds the computed grade
 GRADE=0.0
 
+# execution ID (random number)
+RID=$RANDOM
 
 # task 3.5
-head -n $LINE_COUNT_35 "$1" > ./gt_3.5.txt
-head -n $LINE_COUNT_35 "$2" > ./st_3.5.txt
-sdiff -s ./gt_3.5.txt ./st_3.5.txt > ./cp_3.5.txt
-PT35="$(wc -l < ./cp_3.5.txt)"
+head -n $LINE_COUNT_35 "$1" > ./gt_3.5.$RID.txt
+head -n $LINE_COUNT_35 "$2" > ./st_3.5.$RID.txt
+sdiff -s ./gt_3.5.$RID.txt ./st_3.5.$RID.txt > ./cp_3.5.$RID.txt
+PT35="$(wc -l < ./cp_3.5.$RID.txt)"
 
 DEN_35=$(bc <<< "$LINE_COUNT_35 * 1.0")
 RED_35=$(bc <<< "scale=2; $PT35 / $DEN_35")
@@ -31,49 +33,49 @@ else
   echo "  3.5: incorrect, $PT35 different line(s), (+$GRADE_35 pt)"
 fi
 
-rm -f ./gt_3.5.txt ./st_3.5.txt ./cp_3.5.txt
+rm -f ./gt_3.5.$RID.txt ./st_3.5.$RID.txt ./cp_3.5.$RID.txt
 
 
 # task 3.6.1
-head -n $((LINE_COUNT_35 + LINE_COUNT_361)) "$1" | tail -n  $LINE_COUNT_361 > ./gt_3.6.1.txt
-cp "$2" ./st_3.6.1.txt
+head -n $((LINE_COUNT_35 + LINE_COUNT_361)) "$1" | tail -n  $LINE_COUNT_361 > ./gt_3.6.1.$RID.txt
+cp "$2" ./st_3.6.1.$RID.txt
 
-sed -i '' "s/\$HOME/#HOME/g" ./gt_3.6.1.txt 2>/dev/null
-sed -i '' "s/\$HOME/#HOME/g" ./st_3.6.1.txt 2>/dev/null
+sed -i '' "s/\$HOME/#HOME/g" ./gt_3.6.1.$RID.txt 2>/dev/null
+sed -i '' "s/\$HOME/#HOME/g" ./st_3.6.1.$RID.txt 2>/dev/null
 
 PIPE_PROB=0
 PIPE_PROB_MSG="all \"|\" replaced (ok)"
-PIPE=$(grep "|" ./st_3.6.1.txt)
+PIPE=$(grep "|" ./st_3.6.1.$RID.txt)
 if [ -n "$PIPE" ]; then
   PIPE_PROB=1
   PIPE_PROB_MSG="there are still \"|\" chars"
-  sed -i '' "s/|/,/g" ./st_3.6.1.txt 2>/dev/null
+  sed -i '' "s/|/,/g" ./st_3.6.1.$RID.txt 2>/dev/null
 fi
 
 HOME_PROB=0
-HOMEP=$(grep "/home/comp141" ./st_3.6.1.txt)
+HOMEP=$(grep "/home/comp141" ./st_3.6.1.$RID.txt)
 if [ -n "$HOMEP" ]; then
   HOME_PROB=1
-  sed -i '' "s/\/home\/comp141/#HOME/g" ./st_3.6.1.txt 2>/dev/null
+  sed -i '' "s/\/home\/comp141/#HOME/g" ./st_3.6.1.$RID.txt 2>/dev/null
 fi
 
-sed '1!G;h;$!d' ./gt_3.6.1.txt > ./tg_3.6.1.txt 2>/dev/null
+sed '1!G;h;$!d' ./gt_3.6.1.$RID.txt > ./tg_3.6.1.$RID.txt 2>/dev/null
 
 LINE_1_361=0
 while IFS= read -r line; do
-  LINE_1_361=$(grep -n "$line" ./st_3.6.1.txt | cut -d: -f1)
+  LINE_1_361=$(grep -n "$line" ./st_3.6.1.$RID.txt | cut -d: -f1)
   if [ -n "$LINE_1_361" ]; then
     break
   fi
-done < ./gt_3.6.1.txt
+done < ./gt_3.6.1.$RID.txt
 
 LINE_2_361=0
 while IFS= read -r line; do
-  LINE_2_361=$(grep -n "$line" ./st_3.6.1.txt | cut -d: -f1)
+  LINE_2_361=$(grep -n "$line" ./st_3.6.1.$RID.txt | cut -d: -f1)
   if [ -n "$LINE_2_361" ]; then
     break
   fi
-done < ./tg_3.6.1.txt
+done < ./tg_3.6.1.$RID.txt
 
 LINE_COUNT_361_ST=0
 if (( LINE_2_361 > LINE_1_361 )); then
@@ -107,39 +109,39 @@ else
   echo "3.6.1: incorrect, $PIPE_PROB_MSG, ~$NUM_361 different line(s) (+$GRADE_361 pt)"
 fi
 
-rm -f ./gt_3.6.1.txt ./tg_3.6.1.txt ./st_3.6.1.txt ./cp_3.6.1.txt
+rm -f ./gt_3.6.1.$RID.txt ./tg_3.6.1.$RID.txt ./st_3.6.1.$RID.txt ./cp_3.6.1.$RID.txt
 
 
 # task 3.6.2
-tail -n $LINE_COUNT_362 "$1" > ./gt_3.6.2.txt
-cp "$2" ./st_3.6.2.txt
+tail -n $LINE_COUNT_362 "$1" > ./gt_3.6.2.$RID.txt
+cp "$2" ./st_3.6.2.$RID.txt
 
-sed -i '' "s/\$HOME/#HOME/g" ./gt_3.6.2.txt 2>/dev/null
-sed -i '' "s/\$HOME/#HOME/g" ./st_3.6.2.txt 2>/dev/null
+sed -i '' "s/\$HOME/#HOME/g" ./gt_3.6.2.$RID.txt 2>/dev/null
+sed -i '' "s/\$HOME/#HOME/g" ./st_3.6.2.$RID.txt 2>/dev/null
 
-HOMEP=$(grep "/home/comp141" ./st_3.6.2.txt)
+HOMEP=$(grep "/home/comp141" ./st_3.6.2.$RID.txt)
 if [ -n "$HOMEP" ]; then
   HOME_PROB=1
-  sed -i '' "s/\/home\/comp141/#HOME/g" ./st_3.6.2.txt 2>/dev/null
+  sed -i '' "s/\/home\/comp141/#HOME/g" ./st_3.6.2.$RID.txt 2>/dev/null
 fi
 
-sed '1!G;h;$!d' ./gt_3.6.2.txt > ./tg_3.6.2.txt 2>/dev/null
+sed '1!G;h;$!d' ./gt_3.6.2.$RID.txt > ./tg_3.6.2.$RID.txt 2>/dev/null
 
 LINE_1_362=0
 while IFS= read -r line; do
-  LINE_1_362=$(grep -n "$line" ./st_3.6.2.txt | cut -d: -f1)
+  LINE_1_362=$(grep -n "$line" ./st_3.6.2.$RID.txt | cut -d: -f1)
   if [ -n "$LINE_1_362" ]; then
     break
   fi
-done < ./gt_3.6.2.txt
+done < ./gt_3.6.2.$RID.txt
 
 LINE_2_362=0
 while IFS= read -r line; do
-  LINE_2_362=$(grep -n "$line" ./st_3.6.2.txt | cut -d: -f1)
+  LINE_2_362=$(grep -n "$line" ./st_3.6.2.$RID.txt | cut -d: -f1)
   if [ -n "$LINE_2_362" ]; then
     break
   fi
-done < ./tg_3.6.2.txt
+done < ./tg_3.6.2.$RID.txt
 
 LINE_COUNT_362_ST=0
 if (( LINE_2_362 > LINE_1_362 )); then
@@ -169,7 +171,7 @@ else
   echo "3.6.2: incorrect, ~$NUM_362 different line(s) (+$GRADE_362 pt)"
 fi
 
-rm -f ./gt_3.6.2.txt ./tg_3.6.2.txt ./st_3.6.2.txt ./cp_3.6.2.txt
+rm -f ./gt_3.6.2.$RID.txt ./tg_3.6.2.$RID.txt ./st_3.6.2.$RID.txt ./cp_3.6.2.$RID.txt
 
 
 # task 3.7
