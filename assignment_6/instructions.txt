@@ -1,8 +1,8 @@
 COMP 141 / 400D - Intro to Computing Tools and Techniques
-Loyola University Chicago, Fall 2025
+Loyola University Chicago, Spring 2026
 Assignment #6: Remote access and data compression & archiving
 Total: 10 points
-Due date: Nov 23, 11:59 PM CT
+Due date: Apr 12, 11:59 PM CT
 --------------
 
 
