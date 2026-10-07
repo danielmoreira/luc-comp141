@@ -1,8 +1,8 @@
 COMP 141 / 400D - Intro to Computing Tools and Techniques
-Loyola University Chicago, Spring 2026
+Loyola University Chicago, Fall 2026
 Assignment #4: Permissions & Processes
 Total: 10 points
-Due date: Mar 08, 11:59 PM CT
+Due date: Oct 12, 11:59 PM CT
 --------------
 
 
