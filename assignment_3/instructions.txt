@@ -1,8 +1,8 @@
 COMP 141 / 400D - Intro to Computing Tools and Techniques
-Loyola University Chicago, Spring 2026
+Loyola University Chicago, Fall 2026
 Assignment #3: Manipulating Files and Directories & Redirection
 Total: 15 points
-Due date: Feb 22, 11:59 PM CT
+Due date: Oct 4, 11:59 PM CT
 --------------
 
 
