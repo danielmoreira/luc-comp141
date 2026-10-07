@@ -2,7 +2,7 @@ COMP 141 / 400D - Intro to Computing Tools and Techniques
 Loyola University Chicago, Fall 2026
 Assignment #2: File System Navigation and Exploration
 Total: 10 points
-Due date: Sep 06, 11:59 PM CT
+Due date: Sep 20, 11:59 PM CT
 --------------
 
 
